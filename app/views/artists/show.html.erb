@@ -3,3 +3,7 @@
 <%= @artist.name %><br>
 <%= @artist.age %><br>
 <%= @artist.bio %><br>
+
+<%= link_to 'Edit', edit_artist_path(@artist) %> 
+<%= link_to 'Back', artists_path %>
+<%= button_to "Delete", @artist, :method => :delete %>

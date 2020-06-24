@@ -1,14 +1,5 @@
 <h3>Artist Form</h3>
 
-<%=form_tag artists_path do%>
-    <label>Artist Name:</label><br>
-    <%= text_field_tag :"artist[name]" %><br>
+<%= render 'form', artist: @artist %>
 
-    <label>Artist Age:</label><br>
-    <%= text_field_tag :"artist[age]" %><br>
-
-    <label>Artist Bio:</label><br>
-    <%= text_field_tag :"artist[bio]" %><br>
-
-    <%= submit_tag "Submit Artist" %>
-<% end %>
+<%= link_to 'Back', artists_path %>
